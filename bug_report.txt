@@ -1,0 +1,36 @@
+----- 08/11/19 22:25:26 -----
+Traceback (most recent call last):
+  File "gui.py", line 173, in play_as
+    if chess.game_ended(game):
+  File "/home/vamshi/ChessPy/ChessPy/chess.py", line 1127, in game_ended
+    is_checkmate(game, BLACK) or \
+  File "/home/vamshi/ChessPy/ChessPy/chess.py", line 1086, in is_checkmate
+    for _ in legal_moves(game, game.to_move):
+  File "/home/vamshi/ChessPy/ChessPy/chess.py", line 1067, in legal_moves
+    if is_legal_move(game, move):
+  File "/home/vamshi/ChessPy/ChessPy/chess.py", line 1071, in is_legal_move
+    new_game = make_move(game, move)
+  File "/home/vamshi/ChessPy/ChessPy/chess.py", line 427, in make_move
+    new_game = deepcopy(game)
+  File "/usr/lib/python3.6/copy.py", line 180, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/usr/lib/python3.6/copy.py", line 280, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/usr/lib/python3.6/copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "/usr/lib/python3.6/copy.py", line 240, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/usr/lib/python3.6/copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "/usr/lib/python3.6/copy.py", line 215, in _deepcopy_list
+    append(deepcopy(a, memo))
+KeyboardInterrupt
+
+Playing as BLACK:
+	g2g3 e7e5 e2e4
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+	rnbqkbnr/pppppppp/8/8/8/6P1/PPPPPP1P/RNBQKBNR b KQkq - 0 1
+	rnbqkbnr/pppp1ppp/8/4p3/8/6P1/PPPPPP1P/RNBQKBNR w KQkq e6 0 2
+	rnbqkbnr/pppp1ppp/8/4p3/4P3/6P1/PPPP1P1P/RNBQKBNR b KQkq e3 0 2
+-----------------------------
+
